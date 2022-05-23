@@ -41,6 +41,7 @@ hr {
 /* img cont */
 .img-cont {
     width: 30%;
+    position: relative;
 }
 
 .ms_card_content {
@@ -53,6 +54,23 @@ hr {
     width: 35%;
     padding: 0;
     padding-right: 1rem;
+}
+
+.img-cont div {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+}
+
+.img-cont div:hover {
+    color: white;
+    background-color: red;
 }
 
 .info-cont .logo {
@@ -107,6 +125,10 @@ hr {
 .offers:first-child .offers-price {
     color: darkred;
 }
+
+.related-cont i:last-child {
+    vertical-align: text-top;
+}
 /* review cont */
 .review-cont {
     width: 40%;
@@ -128,10 +150,6 @@ hr {
         display: block;
     }
 
-    .related-cont {
-        display: none;
-    }
-
     .img-cont {
         width: 100%;
         height: 300px;
@@ -151,10 +169,6 @@ hr {
         order: 2;
         width: 100%;
         padding-left: 1rem;
-    }
-
-    .logo {
-        display: none;
     }
 
     .discount {
@@ -191,5 +205,9 @@ hr {
         display: block;
         width: 100%;
         order: 4;
+    }
+
+    .small-none {
+        display: none;
     }
 }
