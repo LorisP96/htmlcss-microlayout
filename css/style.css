@@ -2,6 +2,11 @@
     display: flex;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 ul {
     list-style-type: none;
     padding-left: 0;
@@ -11,11 +16,20 @@ i {
     vertical-align: middle;
 }
 
+hr {
+    margin: 0.5rem 0;
+    width: 100%
+}
+
+.dotted {
+    text-decoration: underline dotted;
+}
+
 /* MS CARD */
 .ms_card {
     width: 100%;
-    background-color: lightgrey;
     margin: 20px;
+    border: 1px solid black;
 }
 
 .ms_card img {
@@ -64,13 +78,26 @@ i {
     font-weight: 600;
     border-radius: 15px;
 }
+
+.price > span {
+    display: none;
+}
+/* pre-related */
+.pre-related {
+    display: none;
+}
 /* related cont */
 .related-cont {
-    width: 20%;
+    width: 25%;
     padding: 1rem;
+    padding-bottom: 0;
     border: 1px dashed grey;
     border-top: none;
     border-bottom: none;
+}
+
+.offers i {
+    font-size: 0.7rem;
 }
 
 .offers-price {
@@ -82,12 +109,87 @@ i {
 }
 /* review cont */
 .review-cont {
-    width: 45%;
+    width: 40%;
     padding-top: 1rem;
     padding-left: 1rem;
+}
+
+.n-review {
+    margin-bottom: 1rem;
 }
 
 .n-review > i {
     color: green;
     vertical-align: baseline;
+}
+
+@media screen and (max-width: 991px) {
+    .ms_card {
+        display: block;
+    }
+
+    .related-cont {
+        display: none;
+    }
+
+    .img-cont {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .ms_card_content {
+        width: 100%;
+    }
+
+    .review-cont {
+        order: 1;
+        width: 100%;
+    }
+
+    .info-cont {
+        order: 2;
+        width: 100%;
+        padding-left: 1rem;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .discount {
+        font-size: 1rem;
+    }
+
+    .related-cont {
+        order: 3;
+    }
+
+    .info-cont > .text-center {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ms_button {
+       width: 30%;
+   }
+
+    .ms_card_content > .flex-cont {
+        flex-wrap: wrap;
+    }
+
+    .price {
+        text-align: start;
+    }
+
+    .price > span {
+        display: inline;
+    }
+
+    .pre-related {
+        display: block;
+        width: 100%;
+        order: 4;
+    }
 }
