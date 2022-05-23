@@ -1,0 +1,93 @@
+.flex-cont {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+i {
+    vertical-align: middle;
+}
+
+/* MS CARD */
+.ms_card {
+    width: 100%;
+    background-color: lightgrey;
+    margin: 20px;
+}
+
+.ms_card img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    object-fit: cover;
+}
+/* img cont */
+.img-cont {
+    width: 30%;
+}
+
+.ms_card_content {
+    width: 70%;
+    padding: 1rem;
+}
+
+/* info cont */
+.info-cont {
+    width: 35%;
+    padding: 0;
+    padding-right: 1rem;
+}
+
+.info-cont .logo {
+    margin: 1rem auto;
+}
+
+.info-cont img {
+    width: 40%;
+}
+
+.discount {
+    color: darkred;
+    text-decoration: line-through;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.info-cont button {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 15px;
+}
+/* related cont */
+.related-cont {
+    width: 20%;
+    padding: 1rem;
+    border: 1px dashed grey;
+    border-top: none;
+    border-bottom: none;
+}
+
+.offers-price {
+    font-weight: 700;
+}
+
+.offers:first-child .offers-price {
+    color: darkred;
+}
+/* review cont */
+.review-cont {
+    width: 45%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.n-review > i {
+    color: green;
+    vertical-align: baseline;
+}
